@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 60px; 
+    background-color: #ddb37d;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FF4081;
+    padding: 10px 0;
+    z-index: 1000;
+}
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+}
+.nav-bar li {
+    margin: 0 15px;
+}
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.logo-menu {
+    height: 10;
+}
+.nav-bar .menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-container {
+    display: flex;
+    background-color: #bfe4cd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+}
+.image-side {
+    width: 50%;
+    display: block;
+}
+.image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.form-side {
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.logo img {
+    width: 100px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.login-btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.login-btn:disabled {
+    background-color: #cccccc;
+}
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .nav-bar ul {
+        display: none;
+        flex-direction: column;
+        background-color: #FF4081;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 38px;
+    }
+    .nav-bar ul.show {
+        display: flex;
+        padding: 20px;
+        margin-inline: 20px;
+    }
+    .nav-bar .menu-icon {
+        display: block;
+    }
+    .login-container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .image-side, .form-side {
+        width: 100%;
+    }
+    .form-side {
+        padding: 20px;
+    }
+}

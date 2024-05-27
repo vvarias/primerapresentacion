@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/estilos/styleReg.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+        <img src="assets/imagenes/LOGO_2-removebg-preview.png" alt="Logo del Restaurante">
+        <ul id="nav-menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Recetas</a></li>
+            <li><a href="#">Calculadoras</a></li>
+            <li><a href="#">Preguntas</a></li>
+            <li><a href="#">ChatBot</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="register-container">
+            <div class="image-side">
+                <img src="assets/imagenes/Gordon-Ramsay3.webp" alt="Imagen de fondo">
+            </div>
+            <div class="form-side">
+                <div class="form-group">
+                    <label for="firstName">Primer Nombre</label>
+                    <input type="text" id="firstName" >
+                </div>
+                <div class="form-group">
+                    <label for="secondName">Segundo Nombre</label>
+                    <input type="text" id="secondName">
+                </div>
+                <div class="form-group">
+                    <label for="firstLastName">Primer Apellido</label>
+                    <input type="text" id="firstLastName">
+                </div>
+                <div class="form-group">
+                    <label for="secondLastName">Segundo Apellido</label>
+                    <input type="text" id="secondLastName">
+                </div>
+                <div class="form-group">
+                    <label for="birthDate">Fecha de Nacimiento</label>
+                    <input type="date" id="birthDate">
+                </div>
+                <div class="result" id="result"></div>
+                <button class="register-btn" onclick="generarCorreo()">Generar Correo</button>
+                <button class="back-btn" onclick="window.location.href='index.html'">Atrás</button>
+                <button class="register-btn" onclick="window.location.href='iniciarSesion.html'">Iniciar Sesion</button>
+            </div>
+        </div>
+    </div>
+<script src="assets/java/formregistro.js"></script>
+</body>
+</html>
